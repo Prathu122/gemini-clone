@@ -13,7 +13,7 @@ object RetrofitInstance {
     // Interceptor to add Authorization header
     private val authInterceptor = Interceptor { chain ->
         val request: Request = chain.request().newBuilder()
-            .addHeader("Authorization", "Bearer AIzaSyBmOfYpJP8tO0_J-2MuK5JaGX39uRvMf0U")  // Replace with actual API key
+            .addHeader("Authorization", "Bearer ")  // Replace with actual API key
             .addHeader("Content-Type", "application/json")
             .build()
         chain.proceed(request)
